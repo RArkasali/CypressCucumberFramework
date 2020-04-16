@@ -1,0 +1,36 @@
+[
+  {
+    "staging": {
+      "url": "https://www.instagram.com/",
+      "accounts": [
+        {
+          "nick": "Bronze",
+          "user": "phuteetest1",
+          "pass": "Tinhban3"
+        },
+        {
+          "nick": "Gold",
+          "user": "phuteetest2",
+          "pass": "Tinhban3"
+        }
+      ]
+    }
+  },
+  {
+    "production": {
+      "url": "https://www.facebook.com/",
+      "accounts": [
+        {
+          "nick": "Bronze",
+          "user": "phuteetest1@gmail.com",
+          "pass": "Tinhban3"
+        },
+        {
+          "nick": "Gold",
+          "user": "phuteetest2@gmail.com",
+          "pass": "Tinhban3"
+        }
+      ]
+    }
+  }
+]

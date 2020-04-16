@@ -1,0 +1,49 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "create tests on 3 sites",
+  "main": "index.js",
+  "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "cypress-cucumber-preprocessor": "^2.0.1",
+    "ls": "^0.2.1",
+    "n-readlines": "^1.0.0"
+  },
+  "devDependencies": {
+    "cypress": "^4.2.0",
+    "cypress-multi-reporters": "^1.2.4",
+    "cypress-xpath": "^1.4.0",
+    "mocha": "^7.1.0",
+    "mocha-junit-reporter": "^1.23.3",
+    "mochawesome": "^5.0.0",
+    "mochawesome-merge": "^4.0.3",
+    "mochawesome-report-generator": "^4.1.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "report:removeOld": "rd \".\\cypress\\results\" \".\\cypress\\reports\\\" /s /q | exit 0",
+    "report:make": "npx cypress run",
+    "report:merge": "npx mochawesome-merge \"cypress/results/json/*.json\" > cypress/results/output.json | exit 0",
+    "report:generate": "marge ./cypress/results/output.json -o ./cypress/reports/report | exit 0",
+    "report:copyScreenshots": "move \".\\cypress\\screenshots\" \".\\cypress\\reports\\report\" | exit 0",
+    "report:moveHTML": "move \".\\cypress\\reports\\report.html\" \".\\cypress\\reports\\report\"",
+    "report": "run-s report:*",
+    "after:merge": "npx mochawesome-merge \"cypress/results/json/*.json\" > cypress/results/output.json | exit 0",
+    "after:generate": "marge ./cypress/results/output.json -o ./cypress/reports/report | exit 0",
+    "after:copyScreenshots": "move \".\\cypress\\screenshots\" \".\\cypress\\reports\\report\" | exit 0",
+    "after:moveHTML": "move \".\\cypress\\reports\\report.html\" \".\\cypress\\reports\\report\"",
+    "after": "run-s after:*"
+  },
+  "author": "James Dang",
+  "license": "ISC",
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "json",
+    "data",
+    "encrypt/decrypt",
+    "data",
+    "from",
+    "json"
+  ]
+}

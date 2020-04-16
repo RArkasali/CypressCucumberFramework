@@ -1,0 +1,70 @@
+[
+    {
+      "name": "txtSearch",
+      "xpath": "//input[@name='q']"
+    },
+    {
+        "name":"btnSearch",
+        "xpath":"(//input[@name='btnK'])[2]"
+    },
+    {
+        "name":"btnFirstPage",
+        "xpath":"//input[@name='btnI']"
+    },
+    {
+        "name":"txtUser",
+        "xpath":"//input[@name='username']"
+    },
+    {
+        "name":"txtPass",
+        "xpath":"//input[@name='password']"
+    },
+    {
+        "name":"btnLogin",
+        "xpath":"//div[text()='Log In']"
+    },
+    {
+        "name":"btnNotNow",
+        "xpath":"//button[text()='Not Now']"
+    },
+    {
+        "name":"imgMsg",
+        "xpath":"//img[@alt='Instagram']"
+    },
+    {
+        "name":"svgOption",
+        "xpath":"//button[text()='Edit Profile']/../following-sibling::div"
+    },
+    {
+        "name":"btnLogout",
+        "xpath":"//button[text()='Log Out']"
+    },
+    {
+        "name":"lblMsg",
+        "xpath":"//h1[text()='Instagram']"
+    },
+    {
+        "name":"prod_txtUser",
+        "xpath":"//input[@name='email']"
+    },
+    {
+        "name":"prod_txtPass",
+        "xpath":"//input[@name='pass']"
+    },
+    {
+        "name":"prod_btnLogin",
+        "xpath":"//label[@id='loginbutton']/input"
+    },
+    {
+        "name":"prod_mnuLogout",
+        "xpath":"//div[@id='logoutMenu']"
+    },
+    {
+        "name":"prod_btnLogout",
+        "xpath":"//li[contains(@data-gt,'menu_logout')]"
+    },
+    {
+        "name":"prod_lblMsg",
+        "xpath":"//u[text()='Facebook']"
+    }
+]

@@ -1,0 +1,9 @@
+{
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "testFiles": "**/*.{feature,features}",
+"pluginsFile": "cypress/plugins/index.js",
+"display":false
+}

@@ -1,0 +1,1 @@
+npx marge 'cypress/results/output.json'
